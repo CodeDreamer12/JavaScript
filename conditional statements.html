@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=prompt("Enter your age");
+        console.log(typeof(a));
+        a=Number.parseInt(a);
+        console.log(typeof(a));
+        if(a<0){
+            alert("Invalid age");
+        }
+        else if(a<=8){
+            alert("You are a kid");
+        }
+        else if(a<=18 && a>=8){
+            alert("You are a kid but you can think of driving after 18");
+        }
+        else{
+            alert("You can drive");
+        }
+        console.log("Done");
+        console.log("You can", (a<18 ? " not drive":" drive"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
